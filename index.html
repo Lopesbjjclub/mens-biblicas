@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens Bíblicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <div class="content">
+            <h1><i class="fas fa-book-bible"></i> Mensagem Bíblica do Dia</h1>
+            <div class="message-box">
+                <p id="message">Clique no botão para ver uma mensagem bíblica.</p>
+            </div>
+            <button onclick="generateMessage()">
+                <i class="fas fa-pray"></i> Nova Mensagem
+            </button>
+            <div class="share-buttons">
+                <button onclick="shareMessage('whatsapp')" class="share-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+                <button onclick="shareMessage('twitter')" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="rodape">
+    <p>&COPY; Jonatha Lopes 2024</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
